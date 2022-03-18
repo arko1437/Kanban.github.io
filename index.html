@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>Kanban Board</title>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="code.js"></script>
+<body>
+    <div id="first">
+    <h1 id="head">Astra Project - Kanban Board</h1>
+    </div> 
+    <div id="second" >
+      <b><p id="head2"></p></b>
+    </div>
+    
+    <div id="Backlog" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p id="firstp">&nbsp;Backlog-6</p> 
+
+        <!--Multiple divs used for desiging tasks which will traverse along the different slides of the kanban board-->
+
+        <div class="task" id="task1" draggable="true" ondragstart="drag(event)">
+            <P style="color: #bcbcbc; margin-left:15px;"> L2A-4</P>
+            <p style="margin-left:15px;">User:Edit profile</P>
+        </div>
+
+        <div class="task" id="task2" draggable="true" ondragstart="drag(event)">
+            <P style="color: #bcbcbc; margin-left:15px;"> L2A-6</P>
+            <p style="margin-left:15px;">User:Create article</P>
+        </div>
+
+        <div class="task" id="task3" draggable="true" ondragstart="drag(event)">
+            <P style="color: #bcbcbc; margin-left:15px;"> L2A-6</P>
+            <p style="margin-left:15px;">User:Edit my article</P>
+        </div>
+
+        <div class="task" id="task4" draggable="true" ondragstart="drag(event)">
+            <P style="color: #bcbcbc; margin-left:15px;"> L2A-3</P>
+            <p style="margin-left:15px;">Admin:List users</P>
+        </div>
+            
+        <div class="task"id="task5" draggable="true" ondragstart="drag(event)">
+            <P style="color: #bcbcbc; margin-left:15px;"> L2A-1</P>
+            <p style="margin-left:15px;">Admin:Block user account</P>
+        </div>
+
+        <div class="task" id="task6" draggable="true" ondragstart="drag(event)">
+            <P style="color: #bcbcbc; margin-left:15px;"> L2A-2</P>
+            <p style="margin-left:15px;">Admin:Approve user account</P>
+        </div>
+
+        </div>
+    
+    <div id="Selectedfordevelopment" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div id="heading2">
+            <p id ="secondp" style="color: black;">&nbsp;Selected For Dev</p>
+        </div>
+    </div>
+    <div id="Inprogress" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div id="heading3">
+            <p id="thirdp">&nbsp;In Progress</p>
+        </div>
+    </div>
+
+    <div id="Done" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div id="heading4">
+            <p id="fourp">&nbsp;Done</p>
+        </div>
+    </div>
+</body>
+</html>
